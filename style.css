@@ -93,6 +93,10 @@ textarea:not([rows]) {
     align-items: center;
     flex-direction: column;
     color: white;
+    padding: 0 2rem 0 2rem;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .sizes {
@@ -104,4 +108,36 @@ textarea:not([rows]) {
     padding: 1rem 2rem;
     border-radius: 1rem;
     background-color: black;
+}
+
+.container {
+    padding:0 2rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .content {
+        height: 100vh;
+        font-size: 100%;
+    };
+}
+
+@media screen and (max-width: 1400px) {
+    .content {
+        height: 100vh;
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .content {
+        height: 100vh;
+        font-size: 40%;
+    };
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        height: 100vh;
+        font-size: 20%;
+    }
 }
